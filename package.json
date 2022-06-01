@@ -1,0 +1,20 @@
+{
+  "name": "ses",
+  "version": "1.0.0",
+  "description": "",
+  "main": "insdex.js",
+  "scripts": {
+    "s": "nodemon insdex.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ha1f15ch/sessiaya.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ha1f15ch/sessiaya/issues"
+  },
+  "homepage": "https://github.com/Ha1f15ch/sessiaya#readme"
+}

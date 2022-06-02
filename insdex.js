@@ -3,16 +3,20 @@ const express = require('express');
 const app = express();
 const port = 3000
 
+const urlencodedParser = express.urlencoded({extended: false})//Значение extended: false указывает, 
+//что объект - результат парсинга будет представлять набор пар ключ-значение, а каждое значение может быть представлено в виде строки или массива.
 app.get('/', (req, res) => {
+  res.redirect('/list')
+})
 
-    var days = ['Воскресенье','Понедельник','Вторник','Среда','Четверг','Пятница','Суббота'];
+app.get('/list', (req, res) => {
+  res.sendFile(__dirname + "/index.html");
+})
 
-      var d = new Date();
-      var n = d.getDay();
-      
-    //console.log(req.query)
-    // http://localhost:3000/?name=John
-    res.send(`Hello ${req.query.name}, today is ${days[n]}`);
+app.post('/Create', urlencodedParser, (req, res) => {
+  if(!req.body) {return res.sendStatus(400);}
+  console.log(req.body);
+  res.send(`${req.body.DataUser}`);
 })
 
 app.listen(port, () => {

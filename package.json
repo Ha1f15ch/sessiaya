@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/Ha1f15ch/sessiaya/issues"
   },
-  "homepage": "https://github.com/Ha1f15ch/sessiaya#readme"
+  "homepage": "https://github.com/Ha1f15ch/sessiaya#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "pg": "^8.7.3"
+  }
 }

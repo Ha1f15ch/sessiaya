@@ -4,7 +4,7 @@
   "description": "",
   "main": "insdex.js",
   "scripts": {
-    "s": "nodemon insdex.js"
+    "s": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/Ha1f15ch/sessiaya/issues"
   },
-  "homepage": "https://github.com/Ha1f15ch/sessiaya#readme"
+  "homepage": "https://github.com/Ha1f15ch/sessiaya#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dot-env": "^0.0.1",
+    "express": "^4.18.1",
+    "node-postgres": "^0.6.2",
+    "pg": "^8.7.3"
+  }
 }
